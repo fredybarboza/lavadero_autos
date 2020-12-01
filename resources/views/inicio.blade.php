@@ -7,9 +7,12 @@
 </head>
 <body>
     <form action="perfil" method="post">
-    <label for="id">ID</label>
-    <input type="text" id="id" name="id">
-    <input type="submit" value="submit">
+    @csrf
+    <label>
+    ID
+    <input type="text" name="id">
+    </label>
+    <input type="submit" value="Enviar">
     </form>
 </body>
 </html>

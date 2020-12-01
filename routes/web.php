@@ -23,6 +23,8 @@ Route::get('/', [inicioController::class,'inicio']);
 Route::get('ayuda',[ayudaController::class,'ayuda']);
 //Perfil del usuario
 Route::get('perfil',[perfilController::class,'perfil']);
+Route::post('perfil',[perfilController::class,'formulario']);
+Route::post('perfil/pedido',[perfilController::class,'pedido']);
 Route::get('perfil/notificaciones',[notificacionesController::class,'notificaciones']);
 Route::get('perfil/seguirlavado',[seguirLavadoController::class,'seguirLavado']);
 Route::get('perfil/historial',[historialController::class,'historial']);
